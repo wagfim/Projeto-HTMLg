@@ -158,7 +158,7 @@
             display: grid;
             grid-template-columns: 1fr 1.5fr; /* temos duas colunas a primira inferior a segunda */
             gap: var(--gap);
-            min-height: 100vw;           
+            min-height: 100vh;           
         }
 
         .intro-text-content, .intro-img  {
