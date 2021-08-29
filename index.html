@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO HTML</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label> <!-- isso aqui serve para alguem que usa algum leitor de tela, tera um botao na tela caso ele queira fechar */  -->
+        <aside class="menu white-bg"> <!--  linha do menu -->
+            <div class="main-content menu-content">
+                 <h1 onclick="getElementById('close-menu').checked = false;"> <a href="#home">Logo</a> </h1>
+
+                <nav>
+                     <ul onclick="getElementById('close-menu').checked = false;"> <!-- isso serve para quando clicar no menu do cel direcionar o menu ate o elemtneo selecionado -->
+                         <li><a href="#intro">Introdução</a></li>
+                         <li><a href="#grid-one">Minha Grid</a></li>                       
+                         <li><a href="#gallery">Galeria</a></li>
+                         <li><a href="#pricing">Sobre</a></li>
+                         <li><a href="#Contato">contato</a></li>
+                        </ul>
+                 </nav>
+                </div>
+        </aside>
+<!-- seção 1 -->
+        
+        <div class="menu-spacing"></div>
+        
+            <section id="home" class="intro main-bg section">
+
+                <div class="main-content intro-content">
+                    <div class="intro-text-content">
+
+                        <h2> January Brinks us Firefox 85</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem perspiciatis 
+                            adipisci quia delectus non ullam odit sequi inventore fugit, repellat ducimus possimus officia ut 
+                            aperiam nesciunt eaque fugiat voluptatibus.</p>
+                    </div>
+
+                    <div class="intro-img">
+                            <img src="img/imag2.svg" alt="logo de html css e js">
+                    </div>
+                </div>
+
+            </section>
+
+<!-- seção 2 -->
+        <section id="intro" class="white-bg section">
+            <div class="main-content top3-content">
+
+                <h2> news coverage and some surprises </h2>  
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem perspiciatis adipisci quia delectus non ullam odit sequi inventore fugit, repellat ducimus possimus officia ut aperiam nesciunt eaque fugiat voluptatibus.</p>               
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem perspiciatis adipisci quia delectus non ullam odit sequi inventore fugit, repellat ducimus possimus officia ut aperiam nesciunt eaque fugiat voluptatibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem perspiciatis adipisci quia delectus non ullam odit sequi inventore fugit, repellat ducimus possimus officia ut aperiam nesciunt eaque fugiat voluptatibus.</p>
+            </div>
+        </section> 
+
+<!-- seção 3 -->
+
+        <section id="grid-one" class="grid-one main-bg section">
+            <div class="main-content grid-one-content">
+
+                    <h2 class="grid-main-heading">Minha grid</h2>
+                    <p class="grid-descricao">Em breve uma nova Descrição</p>
+
+                <div class="grid">
+                    <article>
+                        <h3> Teste 1</h3>  
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem perspiciatis adipisci quia delectus non ullam odit sequi inventore fugit, repellat ducimus possimus officia ut aperiam nesciunt eaque fugiat voluptatibus.</p>               
+                    </article>
+
+                    <article>
+                        <h3> Teste 1</h3>  
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem perspiciatis adipisci quia delectus non ullam odit sequi inventore fugit, repellat ducimus possimus officia ut aperiam nesciunt eaque fugiat voluptatibus.</p>               
+                    </article>
+
+                    <article>
+                        <h3> Teste 1</h3>  
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem perspiciatis adipisci quia delectus non ullam odit sequi inventore fugit, repellat ducimus possimus officia ut aperiam nesciunt eaque fugiat voluptatibus.</p>               
+                    </article>
+                </div>
+            </div>
+        </section>  
+
+<!-- seção 3 -->
+
+        <section id="gallery" class="grid-one white-bg section">
+            <div class="main-content grid-one-content">
+
+                    <h2 class="grid-main-heading">Galeria</h2>
+                    <p class="grid-descricao">Em breve uma nova Descrição</p>
+
+                <div class="grid">
+                    <div class="gallery-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=1" alt="random image from unsplash">
+                    </div>
+
+                    <div class="gallery-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=2" alt="random image from unsplash">
+                    </div>
+
+                    <div class="gallery-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=3" alt="random image from unsplash">
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=4" alt="random image from unsplash">
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=5" alt="random image from unsplash">
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://source.unsplash.com/random/360x360?r=6" alt="random image from unsplash">
+                    </div>
+                </div>
+            </div>
+        </section> 
+
+<!-- seção 3 -->
+
+        <section id="pricing" class="white-bg section">
+            <div class="main-content top3-content">
+
+                <h2> Pricing </h2>  
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem perspiciatis adipisci quia delectus non ullam odit sequi inventore fugit, repellat ducimus possimus officia ut aperiam nesciunt eaque fugiat voluptatibus.</p>               
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem perspiciatis adipisci quia delectus non ullam odit sequi inventore fugit, repellat ducimus possimus officia ut aperiam nesciunt eaque fugiat voluptatibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem perspiciatis adipisci quia delectus non ullam odit sequi inventore fugit, repellat ducimus possimus officia ut aperiam nesciunt eaque fugiat voluptatibus.</p>
+        
+                <div class="responsive-table">
+            <table>
+                <caption>Princing Table</caption>
+
+                <thead>
+                    <tr> 
+                        <th>Title 1</th> <!-- linha dos titulo da tabela -->
+                        <th>Title 2</th>
+                        <th>Title 3</th>
+                        <th>Title 4</th>
+                        <th>Title 5</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                     <td>Content 1</td>
+                        <td>Content 1</td> <!-- linha das informações da tabela -->
+                        <td>Content 1</td>
+                        <td>Content 1</td>
+                        <td>Content 1</td>
+                    </tr>   
+                    <tr>
+                        <td>Content 1</td>
+                           <td>Content 1</td>
+                           <td>Content 1</td>
+                           <td>Content 1</td>
+                           <td>Content 1</td>
+                       </tr>  
+                       <tr>
+                        <td>Content 1</td>
+                           <td>Content 1</td>
+                           <td>Content 1</td>
+                           <td>Content 1</td>
+                           <td>Content 1</td>
+                       </tr>  
+                </tbody>
+
+                <tfoot>
+                    <tr>                       
+                        <td></td>                       
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td> Testando</td>
+                    </tr>
+                </tfoot>
+
+                </table>
+                </div>
+            </div>
+        </section>
+        
+  <!-- seção 3 -->  
+
+  <section id="Contato" class="intro main-bg section">
+
+    <div class="main-content intro-content">
+        <div class="intro-text-content">
+
+            <h2> January Brinks us Firefox 85</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime dolorem perspiciatis 
+                adipisci quia delectus non ullam odit sequi inventore fugit, repellat ducimus possimus officia ut 
+                aperiam nesciunt eaque fugiat voluptatibus.</p>
+        </div>
+
+        <div class="intro-img">
+                <img src="img/imag2.svg" alt="logo de html css e js">
+        </div>
+
+        <div class="contact-form">           
+            
+            <fieldset class="form-grid"> <!-- criando a linha envolta do formulario -->
+                <legend>Entre em contato</legend>
+
+                <div class="form-group">
+                    <label for="first-name"> Primeiro nome</label> <!--  nome do campo -->
+                    <input type="text" name="fist-name" id="first-name" placeholder="Primeiro nome"> <!-- aqui e onde o usuario informa o nome -->
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name"> Segundo nome </label> <!--  nome do campo -->
+                    <input type="text" name="last-name" id="last-name" placeholder="Segundo nome"> <!-- aqui e onde o usuario informa o nome -->
+                </div>
+
+                <div class="form-group">
+                    <label for="email"> E-mail</label> <!--  nome do campo -->
+                    <input type="email" name="email" id="email" placeholder="Seu E-mail"> <!-- aqui e onde o usuario informa o nome -->
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="message"> Mensagem</label> <!--  nome do campo -->
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Digite aqui"></textarea> <!-- aqui e onde o usuario informa o nome -->
+                </div>
+
+                <div class="form-group full-width">
+                    <button type="submit">Enviar Mensagem</button>
+                  </div>
+                
+            </fieldset>
+        </div>
+    </div>
+
+</section>
+
+            <footer id="footer" class="footer white-bg">
+                <p><a rel="nofollow" target="_blank" href="#"></a> Feito com <span class="heart">♥ </span>por Rodrigo William Lopes </p>
+            </footer>
+
+        <a class="back-to-top" href="#">➤</a>
+</body>
+</html>

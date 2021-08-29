@@ -1,0 +1,468 @@
+        :root { /* criação de variaveis */
+             --primary-color: #0A1128;
+             --white-color: #FFFFFF;
+            --gap: 3rem; /* espacamento do texto */
+            --light-gray-color: #EEEEEE;
+            --secondary-color: crimson;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 62.5%;
+           /*  scroll-behavior: smooth; */
+        }
+
+ 
+        body {
+            font-family: 'Open Sans', sans-serif;  /* o corpo possui esta fonte*/         
+            font-size: 2rem;
+            color: var(--primary-color);  /* variavel definindo a cor da fonte*/
+           /* background: red;*/
+           line-height: 1.5; /* espacmaneto entre as linhas*/
+        }
+
+        h1, h2, h3, h4, h5, h6 { /* definindo que todas esses elemento tenha a mesma fonte */
+            font-family: 'Montserrat', sans-serif;
+        } 
+
+        h1 {
+            font-size: 6rem;
+            text-transform: uppercase; /* letra maiuscula */
+        }
+
+        h2 {
+            font-size: 5.5rem;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-size: 5rem;
+            text-transform: uppercase;
+        }
+
+        h4 {
+            font-size: 4.5rem;
+            text-transform: uppercase;
+        }
+
+        h5 {
+            font-size: 4rem;
+            text-transform: uppercase;
+        }
+
+        h6 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+        }
+
+        .main-bg { /*  */
+            background-image: url('../img/imag1.svg'); /*importanto imagem do fundo */
+            background-size: cover;
+            background-position: center center; /* centralizando a imagem no corpo*/
+            color: var(--white-color); /* variavel definindo a cor da fonte*/
+        }
+        .white-bg { /*  */
+            background:  var(--white-color); /* variavel definindo a cor da fonte*/
+            color: var(--primary-color);
+        }
+
+         .main-content {
+            max-width: 120rem; /* largura maximo da pagina */
+            margin: 0 auto; /* conteudo centro da pagina*/
+           padding: 10rem var(--gap); /* espacamento do texto */
+
+
+        } 
+
+        .section { /* toda a pagina com o mesmo tamnho viewport para todas as parte*/
+            min-height: 100vh; 
+        }
+
+        .menu {
+            background: var(--white-color);
+            position: fixed; /* posição do menu fixada */
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 1; /* faz com que as imagem nao fique sobr cima do menu*/
+            border-bottom: 0.1rem solid var(--light-gray-color);
+            
+        }
+
+        .menu-content {
+            display: flex;
+            justify-content: space-between; /* deixa os elemento ca um para o lado*/
+            align-items: center; /* alinhas os elementos no centro pependicular no caso vertical */
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .menu ul {
+            list-style: none; /* tira as bolinha da lista */
+            display: flex;
+        }
+
+        .menu ul li a {
+            display: block; /* para poder ajustar os link */
+            padding: 2rem;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            position: relative; /* esse define para apenas pegar a borda no elementos desses link */
+        }
+
+        .menu ul li a::after {
+            content: '';
+            position: absolute;           
+            bottom: 1rem; /* aqui define a linha de baixo mas proxma do elemento */
+            left: 50%; /* esta alinha a linha de baixo dos elementos */
+            height: 0.2rem;    
+            width: 0; /* quando o mouser nao tiver por cima do elemento ele fica com a largura de 0 porque dai nao vai aparecer */
+            background: var(--secondary-color);
+            transition: all 300ms ease-in-out; /* velocidade de quando passar o mouser por cima */
+        }
+
+        .menu ul li a:hover:after { /* hover quando passar o mouser por cima faz a acao*/
+            width: 50%; /* largura da borda em baixo */
+            left: 25%; /* se eu colocar esse 25% e o left no de cime com 50% ele aparece no meio do elemento se eu quiser para um lado so
+                            eu deixo em cima com 25 e aqui eu retiro o left */
+        }
+
+        .menu h1 {
+            font-size: 2.3rem;
+            color: var(--primary-color);
+        }
+        .menu h1 a {
+            color: inherit; /* herda a cor do seu pai que no caso é esse de cima */
+           
+        }
+
+        a {
+            text-decoration: none; /* tirando o ponto da lista */
+            
+        }
+
+        .menu-spacing {
+            height: 65px;
+        }
+
+        .intro-content {
+            position: relative;
+           /*  top: -40rem; */
+            display: grid;
+            grid-template-columns: 1fr 1.5fr; /* temos duas colunas a primira inferior a segunda */
+            gap: var(--gap);
+            min-height: 100vw;           
+        }
+
+        .intro-text-content, .intro-img  {
+            display: flex;
+            flex-flow: column wrap; /* estou quebrando a linha dentro da minha coluna */
+            justify-content: center; /* centralizando a imagem*/
+        }
+
+        .intro-text-content h2 {
+            font-size: 6rem; /* tamanho da fonte */
+            margin-bottom: 5rem; /* espacamento do titulo h2 para o paragrafo */
+            text-transform: uppercase; /* texto maiusculio*/
+            line-height: 1.2; /* espacamentro entre as linhas */
+        }
+
+        .intro-img img {
+            max-width: 100%; /* maximo de largura */
+            height: auto; /* centralizando a imagem dentro da intro no flex*/
+            
+        }
+
+        .top3-content {
+            min-height: 100vh; 
+            max-width: 64rem;
+            text-align: center;
+            display: flex;
+            flex-flow: column wrap; /* quebrando a linha dentro do flex*/
+            justify-content: center; 
+        }
+
+        .top3-content p {
+            margin-bottom: 3rem; /* espacamento entre o texto parte de baixo apenas */
+        }
+
+        .grid-one-content {
+            min-height: 100vh; 
+           /* max-width: 64rem;*/
+           /*  text-align: center; */
+            display: flex; 
+            /*flex-flow: column wrap;  /* quebrando a linha dentro do flex*/
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center; 
+        }
+
+        .grid-main-heading {
+            margin-bottom: 1rem; /* margim do texto para baixo */
+        }
+
+        .grid-descricao{
+            margin-bottom: 5rem; /* margim do texto para baixo */
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /*  3 colunas com o mesmo tamnho */
+            gap: var(--gap);
+            counter-reset: grid-counter; /* isso aqui é um contador */
+
+        }
+
+        .grid h3 {
+            font-size: 3rem;
+            position: relative; /* eu estou informando o relative para que o conteudo fique dentro da grid */
+            padding-left: 5rem; /* posicao do paragrafo mais para a esquerda */
+            padding-bottom: 2rem; /* mas espaco do paragrafo para o texto em baixo */
+            
+        }
+
+        .grid h3::before { /*foi colocado before porque sera coloca os numero antes do titulo */
+            counter-increment: grid-counter;
+            content: counter(grid-counter); /* esta fazendo a contagem do de quantos grid tem e joga o valor automarico */
+            position: absolute; 
+             font-size: 8rem; 
+             font-style: italic; 
+             top: -4rem; 
+             left: -2rem; 
+             transform: rotate(5deg); /* esta rodando o texto um pouco para vertical */
+        }
+
+        .gallery-img {
+            width: 100%;
+            max-width: 36rem;
+            max-height: 36rem;
+            overflow: hidden; /* esta adequando as imagem junto com a tela quando dimninui */
+        }
+
+        .gallery-img img {
+            transition: all 300ms ease-in-out;
+        }
+
+        .gallery-img img:hover {
+            transform: translate(-3%, 3%) scale(1.2) rotate(5deg) ; /* criando acao na imagem*/
+        }
+
+        .responsive-table {
+            width: 100%;
+            overflow: hidden;
+            overflow-x: auto;
+        }
+
+        table {
+            min-width: 360px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table caption {
+            font-style: italic;
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        table td, table th {
+            padding: 1rem;
+            text-align: left;
+            border: 0.1rem solid var(--light-gray-color);
+        }
+
+        tfoot td {
+            background: var(--light-gray-color);
+        }
+
+        .contact-form {
+            grid-column: span 2;
+        }
+
+        .contact-form .form-grid {
+            border: none; /* tirando a borda do formulario */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: var(--gap);
+        }
+
+        .form-grid legend {
+            font-style: italic;
+            font-size: 1.6rem;
+            margin-bottom: 3rem;
+        }
+
+
+        .form-group {
+             flex: 1 1 320px;
+        }
+
+        .form-group label { /* aqui eu estou quebrando a linhas dos titulo e colocando as informação pra ser preenchida em baixo*/      
+           display: block;
+       }
+
+       .form-group input,
+       .form-group textarea {
+            border: none;
+            background: var(--white-color);
+            padding: 1.5rem 2rem;
+            width: 100%;
+            font-size: 2rem;
+            outline: none;
+       }
+
+       .form-group input:focus,
+       .form-group textarea:focus { /* colocando cor quando clica nos campo texte */
+            box-shadow: 0 0 4px 3px royalblue;
+            margin-bottom: 1rem;
+       }
+
+
+        body .full-width { /* campos do formulario que forem full-width*/
+           width: 100%;
+           flex: 1 1 100%;
+       }
+
+       .form-group button {
+           border: 0.5rem solid var(--white-color);
+           background: none;
+           color: var(--white-color);
+           padding: 1.5rem 2rem;
+           font-size: pointer;
+           transition: all 300ms ease-in-out;
+           
+       }
+
+       .form-group button:hover { /* quando apssar o mouse por cima do botao informa esta cores */
+      
+        background: var(--white-color);
+        color: var(--primary-color);
+       }
+
+       .form-group ::placeholder { /* todos os campo que é placeholder colocar esta cor */
+           color: var(--light-gray-color);
+       }
+
+       .footer {
+           text-align: center;
+           font-size: 1.6rem;
+       }
+
+       .footer a {
+         color: var(--primary-color);
+    }
+
+    .heart {
+        color: var(--secondary-color);
+    }
+
+    .footer p {
+        margin: 0;
+        padding: 3rem;
+    }
+
+    .close-menu { /* ira ficar sobre o menu */
+        display: none;
+    }
+    
+    .back-to-top { /* caso ele clicar no botao top ele ira direcioanr ao inicio */
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        background: var(--white-color);
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        color: var(--primary-color);
+        transform: rotate(-90deg);
+        border: 0.1rem solid var(--primary-color);
+
+
+
+    }
+
+    @media (max-width: 800px) {
+        .intro-content, .grid {
+            grid-template-columns: 1fr;
+        }
+
+        .gallery-img { /* esta pegando aslgumas info da mesma classe*/
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .gallery-img {
+            width: 100%;
+        }
+
+        .grid-one-content {
+            display: block;
+        }
+
+        .menu {
+            bottom: 0;
+            text-align: center;
+        }
+
+        .menu-content, .menu-content ul { /* direcionamento do menu se fica vertical ou horizontal*/
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .menu-content {
+            height: 100vh;
+        }
+
+        .menu { /* nao quero que esse menu fique aparecendo */
+            display: none;
+        }
+
+        /* .close-menu { /* ira ficar sobre o menu 
+            position: fixed;
+            z-index: 2;
+            top: 0;
+            left: 0;
+        }*/
+ 
+        .close-menu-label::after {
+            content: '=';
+            position: fixed;
+            z-index: 2;
+            top: 2rem;
+            right: 2rem;
+            background: var(--primary-color);
+            color: var(--white-color);
+            font-size: 3rem;
+            line-height: 3rem;
+            width: 3rem;
+            height: 3rem;
+            text-align: center;
+            padding: 0.5rem;
+            cursor: pointer;
+        }
+        /* × */
+        .close-menu:checked~.menu { /* quand*/
+            display: block;
+        }
+
+        .close-menu:checked~.close-menu-label::after  { /* quand*/
+            display: block;
+            content: '×';
+        }
+
+        .menu-spacing {
+            display: none;
+        }
+    }
