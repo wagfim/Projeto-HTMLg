@@ -284,6 +284,9 @@
 
         .contact-form {
             grid-column: span 2;
+            
+            
+           
         }
 
         .contact-form .form-grid {
@@ -388,8 +391,6 @@
         transform: rotate(-90deg);
         border: 0.1rem solid var(--primary-color);
 
-
-
     }
 
     @media (max-width: 800px) {
@@ -403,8 +404,14 @@
             max-height: 100%;
         }
 
+        .contact-form {
+            grid-column: revert;                 
+        }
+        
+
         .gallery-img {
             width: 100%;
+         
         }
 
         .grid-one-content {
